@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+        build:
+                build: src/docker
+                image: net.ofnir/shadow-cljs-build
+                ports:
+                        - "127.0.0.1:3333:3333"
+                        - "127.0.0.1:9630:9630"
+                        - "127.0.0.1:8080:8080"
+                volumes:
+                        - ".:/build:z"
