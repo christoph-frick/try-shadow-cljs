@@ -8,7 +8,7 @@ Experiments with [shadow-cljs](http://shadow-cljs.org/), e.g. run it
 Prepare the env:
 
 ```sh
-docker-compose build
+docker-compose build --force-rm --pull
 ```
 
 Run:
