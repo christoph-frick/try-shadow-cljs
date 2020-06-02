@@ -1,0 +1,2 @@
+#!/bin/sh
+docker-compose run -u `id -u`:`id -g` --rm --service-ports --entrypoint npm build $*
