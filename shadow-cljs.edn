@@ -1,8 +1,10 @@
 {:source-paths ["src/main"]
- :dependencies [[mvc-works/hsl "0.1.2"]]
+ :dependencies [[mvc-works/hsl "0.1.2"]
+                [rum "0.11.5" :exclusions [[cljsjs/react] [cljsjs/react-dom]]]
+                [cider/cider-nrepl "0.24.0"]]
  :nrepl {:host "0.0.0.0" :port 3333}
  :http {:host "0.0.0.0" :port 9630}
- :dev-http {8080 {:host "0.0.0.0" :roots ["target/" "assets/"]}}
+ :dev-http {8080 {:host "0.0.0.0" :roots ["target/" "assets/" "node_modules/antd/dist/"]}}
  :builds {:app {:output-dir "target/"
                 :asset-path "."
                 :target :browser
