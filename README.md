@@ -21,6 +21,12 @@ Run:
 
 **This is for `vim-fireplace`.**
 
+Fetch the node deps:
+
+```sh
+./npmw install
+```
+
 Start the application:
 
 ```sh
